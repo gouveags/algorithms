@@ -75,6 +75,8 @@ function main(): void {
   // test binarySearch
   testResult("BinarySearch - Find number in sorted array", binarySearch([1, 2, 3, 4, 5], 3), 3);
   testResult("BinarySearch - Find number not in sorted array", binarySearch([1, 2, 3, 4, 5], 7), null);
+  testResult("BinarySearch - Find number in empty array", binarySearch([], 7), null);
+
 }
 
 main();

@@ -1,5 +1,5 @@
 export function binarySearch(arr: number[], target: number): number | null {
-  if (arr.length === 1 && arr[0] !== target)
+  if (arr.length === 0, arr.length === 1 && arr[0] !== target)
     return null;
 
   if (arr.length === 1)
