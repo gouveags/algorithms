@@ -1,3 +1,4 @@
+import { binarySearch } from "@/algos/binarySearch";
 import { quickSort, quickSortV2 } from "@/algos/quickSort";
 import { selectionSort, selectionSortV2 } from "@/algos/selectionSort";
 import { findMissingNumberInArray } from "@/algos/findMissingNumberInArray";
@@ -70,6 +71,10 @@ function main(): void {
 
   // test findMissingNumberInArray
   testResult("FindMissingNumber - Find missing number in sequence", findMissingNumberInArray([1, 2, 3, 4, 6], 6), 5);
+
+  // test binarySearch
+  testResult("BinarySearch - Find number in sorted array", binarySearch([1, 2, 3, 4, 5], 3), 3);
+  testResult("BinarySearch - Find number not in sorted array", binarySearch([1, 2, 3, 4, 5], 7), null);
 }
 
 main();
